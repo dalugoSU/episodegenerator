@@ -4,14 +4,8 @@ Simple little project. Enter the name of the episode on the entry box, click gen
 
 needs these modules
 
-import random
-import requests
-from bs4 import BeautifulSoup
-from googlesearch import search
-import webbrowser
-import tkinter as tk
-from tkinter import StringVar
+import random, import requests, from bs4 import BeautifulSoup, from googlesearch import search, import webbrowser, import tkinter as tk, from tkinter import StringVar
 
-to install on python 3:
+to install on python 3 (windows):
 
-pip install <module name>
+pip install {module name}
