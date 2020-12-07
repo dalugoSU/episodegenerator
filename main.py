@@ -61,15 +61,15 @@ def get_rec():
         html = responce.text # turn to text
 
         soup = BeautifulSoup(html, 'html.parser') # using beautiful soup go through html pulled by requests module
-        movieTags = soup.select('td.summary') # only select the table containing 'summary'
+        episode_tags = soup.select('td.summary') # only select the table containing 'summary'
 
 
-        def GetTitles(movieTags): # Pass movieTags from above
-            titleSplit = movieTags.text.split() # splits titles into list
+        def GetTitles(episode_tags): # Pass movieTags from above
+            titleSplit = episode_tags.text.split() # splits titles into list
             episodeTitle = ' '.join([str(elem) for elem in titleSplit]) # Turns list into a string containing episode titles
             return episodeTitle # returns the episode title
 
-        titles = [GetTitles(tag) for tag in movieTags] # for each td.summary element, pull episode title using function which turns it into string
+        titles = [GetTitles(tag) for tag in episode_tags] # for each td.summary element, pull episode title using function which turns it into string
 
         number_episodes = len(titles) # Gets number of episodes
 
