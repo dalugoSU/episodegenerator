@@ -64,7 +64,7 @@ def get_rec():
         episode_tags = soup.select('td.summary') # only select the table containing 'summary'
 
 
-        def GetTitles(episode_tags): # Pass movieTags from above
+        def GetTitles(episode_tags): # Pass episode_tags from above
             titleSplit = episode_tags.text.split() # splits titles into list
             episodeTitle = ' '.join([str(elem) for elem in titleSplit]) # Turns list into a string containing episode titles
             return episodeTitle # returns the episode title
