@@ -1,6 +1,6 @@
-# random_episode_generator - Python 3.8
+## random_episode_generator - Python 3.8
 
-## Simple little project. Enter the name of the show, that you want a random episode from, on the entry box, click generate. It will display a random episode from the show, if you want to learn more, click yes, if no, click no and you will get a new suggestion.
+### Simple little project. Enter the name of the show, that you want a random episode from, on the entry box, click generate. It will display a random episode from the show, if you want to learn more, click yes, if no, click no and you will get a new suggestion.
 
 ### needs these modules:
 
